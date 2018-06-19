@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style media="screen">
+  .Cal-border{
+    width: 500px;
+    height: 200px;
+    border: 10px solid gold;
+    margin: 150px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+  .disp{
+    border: 5px solid silver;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .inx{
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .buttoner{
+    
+  }
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="Cal-border">
+
+      <div class="disp">
+        <label id="total"></label>
+      </div>
+      <div class="inx">
+        Value 1 :<input type="number" id="val1"><br>
+        Value 2 :<input type="number" id="val2"><br>
+      </div>
+      <div class="buttoner">
+        <button type="button" onclick="adder()">Submit</button>
+      </div>
+
+
+    </div>
+
+
+      <script type="text/javascript">
+      function adder(){
+        var x,y, total;
+        x = document.getElementById('val1').value;
+        y = document.getElementById('val2').value;
+
+        total = parseInt(x) + parseInt(y);
+        document.getElementById('total').innerHTML = total;
+      }
+      </script>
+  </body>
+</html>
